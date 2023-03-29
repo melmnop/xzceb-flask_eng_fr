@@ -8,6 +8,8 @@ version_lt = '2018-05-01'
 
 language_translator = LanguageTranslatorV3(iam_apikey = apikey_lt, url = url_lt, version = version_lt)
 
+language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com')
+
 """Functions use Wastson Translator to translate"""
 
 def english_to_french(englishText):
