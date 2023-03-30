@@ -23,7 +23,7 @@ def english_to_french(englishText):
     return french_translation
 
 def french_to_english(frenchText):
-    """Funtion translates French to English"""
+    """Function translates French to English"""
     translation_response = language_translator.translate(text = frenchText, model_id = 'fr-en')
     translation = translation_response.get_result()
     english_translation = translation['translations'][0]['translation]
