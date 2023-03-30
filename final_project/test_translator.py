@@ -6,14 +6,14 @@ class TestTranslator(unittest.TestCase):
   
   def test_english_to_french(self):
     self.assertEqual(english_to_french('hello'), 'bonjour')
-    self.assertEqual(english_to_french('good'), 'bien')
+    self.assertEqual(english_to_french('goodbye'), 'au revoir')
     self.assertNotEqual(english_to_french(0), 0)
-    self.assertNotEqual(english_to_french('None'), '')
+    self.assertNotEqual(english_to_french(''), '')
     
   def test_french_to_english(self):
-    self.assertEqual(french_to_english('bien'), 'good')
+    self.assertEqual(french_to_english('au revoir'), 'goodbye')
     self.assertNotEqual(french_to_english(0), 0)
-    self.assertNotEqual(french_to_english('None'), '')                    
+    self.assertNotEqual(french_to_english(''), '')                    
     self.assertEqual(french_to_english('bonjour'), 'hello')
 
 unittest.main()
