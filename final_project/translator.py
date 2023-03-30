@@ -19,12 +19,12 @@ def english_to_french(englishText):
     """Function translates English to French"""
     translation_response = language_translator.translate(text = englishText, model_id = 'en-fr')
     translation = translation_response.get_result()
-    french_translation = translation['translations'][0]['translation]
+    french_translation = translation['translations'][0]['translation']
     return french_translation
 
 def french_to_english(frenchText):
     """Function translates French to English"""
     translation_response = language_translator.translate(text = frenchText, model_id = 'fr-en')
     translation = translation_response.get_result()
-    english_translation = translation['translations'][0]['translation]
+    english_translation = translation['translations'][0]['translation']
     return english_translation                                                                                                     
