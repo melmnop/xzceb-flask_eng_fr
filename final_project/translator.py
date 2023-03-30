@@ -8,12 +8,12 @@ load_dotenv()
 
 URL_LT = 'https://gateway.watsonplatform.net/language-translator/api'
 
-APIKEY_LT = 'dfa7167f927b088baf2aa9285d5c68cb'
+APIKEY_LT = 'lW5nKHZ-dascQb4ZpRVt-2XKz9HrCOK2wTiOaXTCxYeF'
 VERSION_LT = '2018-05-01'
 
 language_translator = LanguageTranslatorV3(iam_apikey = APIKEY_LT, url = URL_LT, version = VERSION_LT)
 
-language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com')
+language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com/instances/4ecc31ff-3cae-45d7-bb3b-13b99049deac')
 
 
 def english_to_french(englishText):
