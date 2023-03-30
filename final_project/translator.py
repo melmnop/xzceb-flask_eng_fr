@@ -12,7 +12,8 @@ authenticator = IAMAuthenticator('lW5nKHZ-dascQb4ZpRVt-2XKz9HrCOK2wTiOaXTCxYeF')
 
 language_translator = LanguageTranslatorV3(version = '2018-05-01', authenticator=authenticator)
 
-language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com/instances/4ecc31ff-3cae-45d7-bb3b-13b99049deac')
+language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com/\
+    instances/4ecc31ff-3cae-45d7-bb3b-13b99049deac')
 
 
 def english_to_french(englishText):
