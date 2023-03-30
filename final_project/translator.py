@@ -16,14 +16,14 @@ language_translator.set_service_url('https://api.us-east.language-translator.wat
 
 
 def english_to_french(englishText):
-    """Translates English to French"""
+    """Function translates English to French"""
     translation_response = language_translator.translate(text = englishText, model_id = 'en-fr')
     translation = translation_response.get_result()
     french_translation = translation['translations'][0]['translation]
     return french_translation
 
 def french_to_english(frenchText):
-    """Translates French to English"""
+    """Funtion translates French to English"""
     translation_response = language_translator.translate(text = frenchText, model_id = 'fr-en')
     translation = translation_response.get_result()
     english_translation = translation['translations'][0]['translation]
