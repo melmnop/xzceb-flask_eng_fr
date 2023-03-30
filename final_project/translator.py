@@ -8,13 +8,9 @@ load_dotenv()
 
 apikey = os.environ['apikey']
 url = os.environ['url']
+authenticator = IAMAuthenticator('lW5nKHZ-dascQb4ZpRVt-2XKz9HrCOK2wTiOaXTCxYeF')
 
-URL_LT = 'https://gateway.watsonplatform.net/language-translator/api'
-
-APIKEY_LT = 'lW5nKHZ-dascQb4ZpRVt-2XKz9HrCOK2wTiOaXTCxYeF'
-VERSION_LT = '2018-05-01'
-
-language_translator = LanguageTranslatorV3(iam_apikey = APIKEY_LT, url = URL_LT, version = VERSION_LT)
+language_translator = LanguageTranslatorV3(version = '2018-05-01', authenticator=authenticator)
 
 language_translator.set_service_url('https://api.us-east.language-translator.watson.cloud.ibm.com/instances/4ecc31ff-3cae-45d7-bb3b-13b99049deac')
 
