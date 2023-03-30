@@ -6,6 +6,9 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from dotenv import load_dotenv
 load_dotenv()
 
+apikey = os.environ['apikey']
+url = os.environ['url']
+
 URL_LT = 'https://gateway.watsonplatform.net/language-translator/api'
 
 APIKEY_LT = 'lW5nKHZ-dascQb4ZpRVt-2XKz9HrCOK2wTiOaXTCxYeF'
